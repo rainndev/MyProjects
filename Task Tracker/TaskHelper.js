@@ -52,8 +52,8 @@ class TaskHelper {
                   <div class="delete-img" data-index-delete="${i}"">
                         <img src="${
                           data.isDone
-                            ? "/img/delete-completed.png"
-                            : "/img/delete-not-completed.png"
+                            ? "img/delete-completed.png"
+                            : "img/delete-not-completed.png"
                         }" width="20px" height="20px" />
                   </div>
        </div>
