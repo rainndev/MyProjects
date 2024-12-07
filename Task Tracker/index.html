@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Tracker</title>
+
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="task.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <!-- Header of main -->
+        <div class="top">
+          <div class="container-add-task-inp">
+            <input
+              class="add-task-inp"
+              type="text"
+              placeholder="Add task here"
+            />
+          </div>
+          <div class="task">
+            <img
+              src="img/add.png"
+              alt="add task image"
+              width="27px"
+              height="27px"
+            />
+            <p>Add Task</p>
+          </div>
+        </div>
+
+        <!-- This area should be the list of task -->
+        <div class="bot">
+          <!-- Container for output -->
+          <div class="output-container">
+            <!-- All Un odered list will show here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="parent-modal">
+      <div class="child-modal">
+        <div style="display: flex; align-items: center">
+          <div style="width: 70%">
+            <h1 class="title-modal"></h1>
+          </div>
+          <div style="width: 30%; display: flex; justify-content: end">
+            <img
+              class="close-button"
+              src="/img/close.png"
+              width="16px"
+              height="16px"
+            />
+          </div>
+        </div>
+        <br />
+        <p class="date-modal"></p>
+        <br />
+        <div class="desc-class">
+          <p class="description-modal">Add description here</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="TaskHelper.js"></script>
+  <script src="main.js"></script>
+</html>
