@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.child-container {
+  margin: 20px 20px;
+  border-radius: 20px;
+  color: white;
+  padding: 30px;
+  width: 400px;
+  background-color: hsl(0, 0%, 12%);
+}
+
+.info-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.info-bio {
+  color: hsl(0, 0%, 77%);
+}
+
+.info-name {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.profile-container img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.info-address {
+  color: hsl(75, 94%, 57%);
+}
+
+.social {
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+  background-color: hsl(0, 0%, 20%);
+  padding: 15px;
+  margin: 10px 0px 10px 10px;
+  border-radius: 10px;
+}
+
+.social:hover {
+  font-weight: bold;
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+}
