@@ -1,0 +1,36 @@
+body {
+  height: 100%;
+  overflow-y: auto;
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+}
+
+.top-bg {
+  width: 100%;
+  height: 35%;
+  background-color: slateblue;
+}
+
+.bg-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.bot-bg {
+  width: 100%;
+  height: 75%;
+  background-color: hsl(275, 100%, 97%);
+}

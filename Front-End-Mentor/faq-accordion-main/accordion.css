@@ -1,0 +1,102 @@
+/* General styles for the accordion */
+
+.accordion-container {
+  color: hsl(292, 42%, 14%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.accordion {
+  font-family: "Work Sans", sans-serif;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.accordion-main-content {
+  border-radius: 20px;
+  padding: 2rem;
+  width: 30%;
+  height: fit-content;
+  background-color: white;
+}
+
+.accordion-title {
+  font-size: clamp(1.2rem, 1.8vw, 2rem);
+  display: flex;
+}
+
+.accordion-title h2 {
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+.accordion input {
+  display: none; /* Hide the checkbox */
+}
+
+.accordion label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  border-bottom: 2px solid hsl(275, 100%, 97%);
+}
+
+.accordion label:hover {
+  color: #a246ce;
+}
+
+.accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 10px;
+}
+
+.content p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  line-height: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 400;
+  color: hsl(292, 16%, 49%);
+}
+
+/* When the checkbox is checked, show the content */
+.accordion input:checked ~ .content {
+  max-height: 100px; /* Adjust to fit your content */
+  padding: 10px;
+}
+
+/* When the checkbox is checked, changed the icon*/
+.accordion input:checked + label .icon-active {
+  background-image: url("/assets/images/icon-minus.svg");
+}
+
+.icon-active {
+  width: 40px;
+  height: 40px;
+  background-image: url("/assets/images/icon-plus.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 575px) {
+  /* Styles for small phones */
+  .accordion-main-content {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .accordion-title img {
+    width: 30px;
+    height: 30px;
+  }
+}
